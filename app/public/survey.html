@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Tab Title -->
+    <title>Friend Finder | Survey</title>
+
+    <!-- bootstrap css and js-->
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.4/css/mdb.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+<body style="background:#f1f1f1;">
+
+    <div class="container px-0">
+
+        <!-- Quiz Page Title -->
+        <header class="mt-5">
+            <h1><i class="fas fa-heart" style="color:#dc3545;"></i> <strong>Friend Finder Survey</strong></h1>
+            <hr>
+        </header>
+
+        <section>
+            <!-- User Name and Photo Panel -->
+            <div class="card mt-4">
+                <h5 class="card-header font-weight-bold" style="background-color:#dc3545; color:#fff;">About You</h5>
+                <div class="card-body">
+                    <h5 class="font-weight-normal"><i class="fas fa-user-circle"></i> Your Name <em>(Required)</em></h5>
+                    <div class="input-group">
+                        <input id="formName" class="form-control" type="text" name="name" placeholder="John Smith">
+                    </div>
+                    <br>
+                    <h5 class="font-weight-normal"><i class="far fa-image"></i> Link to a Photo Image
+                        <em>(Required)</em></h5>
+                    <div class="input-group">
+                        <input id="formImg" class="form-control" type="text" name="name"
+                            placeholder="http://yourphotourl.com/">
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Survey Questions -->
+            <div class="card mt-4 mb-3">
+                <h5 class="card-header font-weight-bold" style="background-color:#dc3545; color:#fff;">Questions</h5>
+                <div class="card-body">
+
+
+                    <div class="card" style="box-shadow:none;">
+                        <ul class="list-group list-group-flush" style="border:1px solid rgba(0,0,0,.125);">
+
+
+                            <!-- Q1 -->
+                            <li class="list-group-item">
+                                <div class="question my-3">
+                                    <h5 class="font-weight-bold">Question 1</h5>
+                                    <p>You find it difficult to introduce yourself to other people.</p>
+
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="question1" id="q1choice1"
+                                            value="1">
+                                        <label class="form-check-label" for="q1choice1">Strongly Disagree</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="question1" id="q1choice2"
+                                            value="2">
+                                        <label class="form-check-label" for="q1choice2">Disagree</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="question1" id="q1choice3"
+                                            value="3">
+                                        <label class="form-check-label" for="q1choice3">Neutral</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="question1" id="q1choice4"
+                                            value="4">
+                                        <label class="form-check-label" for="q1choice4">Agree</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="question1" id="q1choice5"
+                                            value="5">
+                                        <label class="form-check-label" for="q1choice5">Strongly Agree</label>
+                                    </div>
+
+                                </div>
+                            </li>
+
+
+                            <!-- Q2 -->
+                            <li class="list-group-item">
+                                <div class="question my-3">
+                                    <h5 class="font-weight-bold">Question 2</h5>
+                                    <p>Your home and work environments are quite tidy.</p>
+
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="question2" id="q2choice1"
+                                            value="1">
+                                        <label class="form-check-label" for="q2choice1">Strongly Disagree</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="question2" id="q2choice2"
+                                            value="2">
+                                        <label class="form-check-label" for="q2choice2">Disagree</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="question2" id="q2choice3"
+                                            value="3">
+                                        <label class="form-check-label" for="q2choice3">Neutral</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="question2" id="q2choice4"
+                                            value="4">
+                                        <label class="form-check-label" for="q2choice4">Agree</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="question2" id="q2choice5"
+                                            value="5">
+                                        <label class="form-check-label" for="q2choice5">Strongly Agree</label>
+                                    </div>
+
+                                </div>
+                            </li>
+
+
+                            <!-- Q3 -->
+                            <li class="list-group-item">
+                                <div class="question my-3">
+                                    <h5 class="font-weight-bold">Question 3</h5>
+                                    <p>You are usually highly motivated and energetic.</p>
+
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="question3" id="q3choice1"
+                                            value="1">
+                                        <label class="form-check-label" for="q3choice1">Strongly Disagree</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="question3" id="q3choice2"
+                                            value="2">
+                                        <label class="form-check-label" for="q3choice2">Disagree</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="question3" id="q3choice3"
+                                            value="3">
+                                        <label class="form-check-label" for="q3choice3">Neutral</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="question3" id="q3choice4"
+                                            value="4">
+                                        <label class="form-check-label" for="q3choice4">Agree</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="question3" id="q3choice5"
+                                            value="5">
+                                        <label class="form-check-label" for="q3choice5">Strongly Agree</label>
+                                    </div>
+
+                                </div>
+                            </li>
+
+                            <!-- Q4 -->
+                            <li class="list-group-item">
+                                <div class="question my-3">
+                                    <h5 class="font-weight-bold">Question 4</h5>
+                                    <p>You consider yourself more practical than creative.</p>
+
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="question4" id="q4choice1"
+                                            value="1">
+                                        <label class="form-check-label" for="q4choice1">Strongly Disagree</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="question4" id="q4choice2"
+                                            value="2">
+                                        <label class="form-check-label" for="q4choice2">Disagree</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="question4" id="q4choice3"
+                                            value="3">
+                                        <label class="form-check-label" for="q4choice3">Neutral</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="question4" id="q4choice4"
+                                            value="4">
+                                        <label class="form-check-label" for="q4choice4">Agree</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="question4" id="q4choice5"
+                                            value="5">
+                                        <label class="form-check-label" for="q4choice5">Strongly Agree</label>
+                                    </div>
+
+                                </div>
+                            </li>
+
+                            <!-- Q5 -->
+                            <li class="list-group-item">
+                                <div class="question my-3">
+                                    <h5 class="font-weight-bold">Question 5</h5>
+                                    <p>It is often difficult for you to relate to other people’s feelings.</p>
+
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="question5" id="q5choice1"
+                                            value="1">
+                                        <label class="form-check-label" for="q5choice1">Strongly Disagree</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="question5" id="q5choice2"
+                                            value="2">
+                                        <label class="form-check-label" for="q5choice2">Disagree</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="question5" id="q5choice3"
+                                            value="3">
+                                        <label class="form-check-label" for="q5choice3">Neutral</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="question5" id="q5choice4"
+                                            value="4">
+                                        <label class="form-check-label" for="q5choice4">Agree</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="question5" id="q5choice5"
+                                            value="5">
+                                        <label class="form-check-label" for="q5choice5">Strongly Agree</label>
+                                    </div>
+
+                                </div>
+                            </li>
+
+                            <!-- Q6 -->
+                            <li class="list-group-item">
+                                <div class="question my-3">
+                                    <h5 class="font-weight-bold">Question 6</h5>
+                                    <p>An interesting book or a video game is often better than a social event.</p>
+
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="question6" id="q6choice1"
+                                            value="1">
+                                        <label class="form-check-label" for="q6choice1">Strongly Disagree</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="question6" id="q6choice2"
+                                            value="2">
+                                        <label class="form-check-label" for="q6choice2">Disagree</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="question6" id="q6choice3"
+                                            value="3">
+                                        <label class="form-check-label" for="q6choice3">Neutral</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="question6" id="q6choice4"
+                                            value="4">
+                                        <label class="form-check-label" for="q6choice4">Agree</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="question6" id="q6choice5"
+                                            value="5">
+                                        <label class="form-check-label" for="q6choice5">Strongly Agree</label>
+                                    </div>
+
+                                </div>
+                            </li>
+
+                            <!-- Q7 -->
+                            <li class="list-group-item">
+                                <div class="question my-3">
+                                    <h5 class="font-weight-bold">Question 7</h5>
+                                    <p>You are more of a natural improviser than a careful planner.</p>
+
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="question7" id="q7choice1"
+                                            value="1">
+                                        <label class="form-check-label" for="q7choice1">Strongly Disagree</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="question7" id="q7choice2"
+                                            value="2">
+                                        <label class="form-check-label" for="q7choice2">Disagree</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="question7" id="q7choice3"
+                                            value="3">
+                                        <label class="form-check-label" for="q7choice3">Neutral</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="question7" id="q7choice4"
+                                            value="4">
+                                        <label class="form-check-label" for="q7choice4">Agree</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="question7" id="q7choice5"
+                                            value="5">
+                                        <label class="form-check-label" for="q7choice5">Strongly Agree</label>
+                                    </div>
+
+                                </div>
+                            </li>
+
+                            <!-- Q8 -->
+                            <li class="list-group-item">
+                                <div class="question my-3">
+                                    <h5 class="font-weight-bold">Question 8</h5>
+                                    <p>You do not let other people influence your actions.</p>
+
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="question8" id="q8choice1"
+                                            value="1">
+                                        <label class="form-check-label" for="q8choice1">Strongly Disagree</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="question8" id="q8choice2"
+                                            value="2">
+                                        <label class="form-check-label" for="q8choice2">Disagree</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="question8" id="q8choice3"
+                                            value="3">
+                                        <label class="form-check-label" for="q8choice3">Neutral</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="question8" id="q8choice4"
+                                            value="4">
+                                        <label class="form-check-label" for="q8choice4">Agree</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="question8" id="q8choice5"
+                                            value="5">
+                                        <label class="form-check-label" for="q8choice5">Strongly Agree</label>
+                                    </div>
+
+                                </div>
+                            </li>
+
+                            <!-- Q9 -->
+                            <li class="list-group-item">
+                                <div class="question my-3">
+                                    <h5 class="font-weight-bold">Question 9</h5>
+                                    <p>You often spend time exploring unrealistic and impractical yet intriguing ideas.
+                                    </p>
+
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="question9" id="q9choice1"
+                                            value="1">
+                                        <label class="form-check-label" for="q9choice1">Strongly Disagree</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="question9" id="q9choice2"
+                                            value="2">
+                                        <label class="form-check-label" for="q9choice2">Disagree</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="question9" id="q9choice3"
+                                            value="3">
+                                        <label class="form-check-label" for="q9choice3">Neutral</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="question9" id="q9choice4"
+                                            value="4">
+                                        <label class="form-check-label" for="q9choice4">Agree</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="question9" id="q9choice5"
+                                            value="5">
+                                        <label class="form-check-label" for="q9choice5">Strongly Agree</label>
+                                    </div>
+
+                                </div>
+                            </li>
+
+                            <!-- Q10 -->
+                            <li class="list-group-item">
+                                <div class="question my-3">
+                                    <h5 class="font-weight-bold">Question 10</h5>
+                                    <p>You often contemplate the reasons for human existence.</p>
+
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="question10" id="q10choice1"
+                                            value="1">
+                                        <label class="form-check-label" for="q10choice1">Strongly Disagree</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="question10" id="q10choice2"
+                                            value="2">
+                                        <label class="form-check-label" for="q10choice2">Disagree</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="question10" id="q10choice3"
+                                            value="3">
+                                        <label class="form-check-label" for="q10choice3">Neutral</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="question10" id="q10choice4"
+                                            value="4">
+                                        <label class="form-check-label" for="q10choice4">Agree</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="question10" id="q10choice5"
+                                            value="5">
+                                        <label class="form-check-label" for="q10choice5">Strongly Agree</label>
+                                    </div>
+
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <!---end of card holding questions-->
+
+
+                </div>
+                <!---end of card body-->
+            </div>
+            <!---end of card-->
+        </section>
+
+
+
+        <!-- Quiz Submit Button -->
+        <button id="submitButton" style="background:#dc3545 !important;" type="submit"
+            class="btn btn-danger btn-lg btn-block"><i class="fas fa-check-circle"></i> Find My Match!</button>
+
+        <!-- Webpage Footer -->
+        <footer class="footer mt-2">
+            <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/reneehickman/FriendFinder"
+                    target="_blank">GitHub Repo</a> | <a href="/">Home</a></p>
+        </footer>
+
+    </div>
+
+
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.4/js/mdb.min.js"></script>
+</body>
+
+</html>
