@@ -22,9 +22,35 @@ module.exports = function(app) {
     // ---------------------------------------------------------------------------
   
     app.post("/api/friends", function(req, res) {
-        friendData.push(req.body);
-        res.json(true);
+        console.log(req.body)
+        
+        //stores new friends scores into a variable
+        var newFriendData = req.body.Scores;
+        var scoresArr = [];
+        var bestMatch = 0;
 
+        //iterates through current friends in frienddata array
+        for (var i = 0; i < friendData.length; i++){
+          var scoreDiff = 0;
+
+          //iterate through to compare friends
+          for (var j = 0; j < newFriendData.length; j++){
+            scoreDiff += (Math.abs(parseInt(friendData[i].scores[j]) - parseInt(newFriendScore[j])))
+          }
+
+          scoresArr.push(scoreDiff)
+        }
+
+        for (var i = 0; i < scoresArr.length; i++){
+          if (scoresArr[i] <= scoresArr[bestMatch]){
+            bestMatch = i;
+          }
+        }
+
+        var match = friendData[bestMatch];
+        res.json(match)
+
+        friendData.push(req.body);
 
     });
   
