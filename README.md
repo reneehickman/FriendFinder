@@ -4,6 +4,8 @@ Friendfinder is a full stack compatibility-based application thats takes in resu
 
 This app uses the node express package to serve 2 static HTML files along with their css and js files and also serves 2 API routes to get and post data. Data is stored in current session in an object in friends.js and is reset back to dummy data upon starting a new session.
 
+Click [here](https://sleepy-mesa-10549.herokuapp.com/) to view the deployed app on Heroku.
+
 ## Deployment
 1. Clone repo and run `npm install` to download app dependencies.
 2. Run the app in localhost:8081 in your browser. ("http://localhost:8081")
