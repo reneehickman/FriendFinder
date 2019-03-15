@@ -11,8 +11,8 @@ $("#submitButton").on("click", function (event) {
     var questionCount = 10;
 
     //check to make sure user enters name and pic
-    if (friendName == null || friendPic == null) {
-        alert("Please fill out all questions!");
+    if (friendName == "" || friendPic == "") {
+        alert("Please fill out all required fields!");
         return false;
     }
 
@@ -20,7 +20,7 @@ $("#submitButton").on("click", function (event) {
     for (var i = 1; i <= questionCount; i++) {
         userAnswer = $("input:radio[name=question" + i + "]:checked").val();
         if (userAnswer == null) {
-            alert("Please fill out all fields!");
+            alert("Please answer all questions!");
             return false;
         }
     };
